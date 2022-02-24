@@ -6,7 +6,7 @@ if exist !PROGRAMFILES(X86)! set bitness=64 || set bitness=32
 
 :Admin_permissions
 >nul 2>&1 %SYSTEMROOT%\system32\icacls.exe %SYSTEMROOT%\system32\WDI
-if %errorlevel% EQU 0 cd /d %~dp0 && goto :Moving_script
+if %errorlevel% EQU 0 cd /d %~dp0 && goto :Variables
 echo.Запрос прав администратора...
 echo.Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
 echo.UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %bitness:"=""%", "", "runas", 1 >> %temp%\getadmin.vbs
@@ -14,19 +14,7 @@ echo.UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %bitness:"=""%", "", "runas", 1 >>
 del /f /q %temp%\getadmin.vbs
 exit
 
-:Moving_script
-(cd.. && dir | find "FNV_Patcher"
-dir FNV_Patcher | find "FNV_Patcher.bat")>nul
-if %errorlevel% EQU 0 goto :Variables
-mkdir FNV_Patcher
->nul copy FNV_Patcher.bat FNV_Patcher
-FNV_Patcher\FNV_Patcher.bat
-exit
-
 :Variables
-cd..
-if exist FNV_Patcher.bat del /f /q FNV_Patcher.bat
-cd /d %~dp0
 for /f "delims=" %%a in ('powershell -Command "& {Get-ItemProperty -Path '"HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"' -Name Personal | Select-Object -ExpandProperty Personal}"') do set docs=%%a
 if %bitness%==64 (set 7z_link=https://raw.githubusercontent.com/Gsset/Fastboot-Flasher-For-Begonia/main/tools/7za_64.exe
 set curl_link=https://raw.githubusercontent.com/Gsset/Fastboot-Flasher-For-Begonia/main/tools/curl_64.zip)
@@ -57,8 +45,7 @@ powershell -Command "& {Invoke-WebRequest !7z_link! -outfile Tools\7z.exe}"     
 del /f /q Mods\Mods.7z
 del /f /q Tools\curl.zip
 echo Che smotrish?>Tools\ok.txt
-echo. 
-echo.Успешно.
+%echo%Успешно.
 
 :Main
 CLS
