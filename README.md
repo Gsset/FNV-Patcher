@@ -1,2 +1,2 @@
 # Fallout New Vegas Patcher
-Downloads and applies all needed patches and mods, just run the FNV_Patcher.bat
+Downloads and applies basic patches and mods, just run the FNV_Patcher.bat
