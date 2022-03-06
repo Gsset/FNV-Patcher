@@ -25,3 +25,6 @@ List of the mods:
 + FNVModLimitFix
 + MCTF
 + FNV BSA Decompressor
++ JIP LN NVSE Plugin
++ JohnnyGuitar NVSE
+
