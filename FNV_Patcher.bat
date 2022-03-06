@@ -16,6 +16,8 @@ exit
 
 :Variables
 for /f "delims=" %%a in ('powershell -Command "& {Get-ItemProperty -Path '"HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"' -Name Personal | Select-Object -ExpandProperty Personal}"') do set docs=%%a
+for /f "delims=" %%a in ('powershell -Command "& {WMIC CPU Get NumberOfCores | select -Skip 2}"') do set cores=%%a
+if %cores% GTR 6 set cores=6
 if %bitness%==64 (set 7z_link=https://raw.githubusercontent.com/Gsset/Fastboot-Flasher-For-Begonia/main/tools/7za_64.exe
 set curl_link=https://raw.githubusercontent.com/Gsset/Fastboot-Flasher-For-Begonia/main/tools/curl_64.zip)
 if %bitness%==32 (set 7z_link=https://raw.githubusercontent.com/Gsset/Fastboot-Flasher-For-Begonia/main/tools/7za_32.exe
@@ -53,11 +55,6 @@ CLS
 echo.
 set /p fnv_path=
 (setx fnv_path "%fnv_path%")>nul
-%echo%Введите количество физических ядер вашего процессора:
-echo.
-set /p cores=
-if %cores% GTR 6 set cores=6
-(setx cores %cores%)>nul
 CLS
 %echo%Копирование файлов...
 (robocopy Mods "%fnv_path%" /s)>nul
@@ -67,23 +64,32 @@ powershell -Command "& {Invoke-WebRequest -UseBasicParsing 'https://raw.githubus
 %echo%Установка порядка загрузки файлов...
 >nul move "%fnv_path%\plugins.txt" "%userprofile%\appdata\Local\FalloutNV\plugins.txt"
 powershell -Command "& {Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/Gsset/FNV-Patcher/main/load_order.ps1' | Invoke-Expression}"
-%echo%Применение 4GB патча (нажмите пробел)...
+%echo%Применение модов... (нажмите пробел дважды)
 cd /d !fnv_path!
 >nul FNVpatch.exe
 cd /d %~dp0
-%echo%Декомпрессия ресурсов игры (выполните операцию и дождитесь ее окончания)...
+powershell -Command "& {Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/Gsset/FNV-Patcher/main/nvhr.ps1' -outfile %~dp0\nvhr.ps1}"
+powershell -file %~dp0\nvhr.ps1
+%echo%Декомпрессия ресурсов игры... (выполните операцию и дождитесь ее окончания)
 "%fnv_path%\FNV BSA Decompressor.exe"
 (copy Mods\libvorbisfile.dll "%fnv_path%"
 copy Mods\libvorbis.dll "%fnv_path%")>nul
 %echo%Удаление лишних файлов...
 cd /d !fnv_path!
-if exist "Data\*_lang.esp" (del /f /q "Data\*_lang.esp")>nul
-(del /f /q "FNVpatch.exe"
-del /f /q "bass*.dll"
+if exist "Data\*_lang.esp" (del /f /q Data\*_lang.esp)>nul
+(del /f /q FNVpatch.exe
+del /f /q bass*.dll
 del /f /q "FNV BSA Decompressor.*"
-del /f /q "xdelta3.dll"
-del /f /q "FalloutNV_backup.exe"
-REG delete "HKCU\Environment" /F /V "fnv_path"
-REG delete "HKCU\Environment" /F /V "cores")>nul
+del /f /q xdelta3.dll
+del /f /q FalloutNV_backup.exe
+del /f /q cpu_info.exe
+del /f /q %~dp0\nvhr.ps1
+rmdir /s /q AVX
+rmdir /s /q AVX2
+rmdir /s /q AVX512
+rmdir /s /q IA32
+rmdir /s /q SSE
+rmdir /s /q SSE2
+REG delete "HKCU\Environment" /F /V "fnv_path")>nul
 %echo%Завершено.
 pause>nul&&exit
