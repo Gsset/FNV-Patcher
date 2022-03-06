@@ -23,3 +23,5 @@ List of the mods:
 + Unnoficial Patch NVSE Plus
 + NVSE
 + FNVModLimitFix
++ MCTF
++ FNV BSA Decompressor
