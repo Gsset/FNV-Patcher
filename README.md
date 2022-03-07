@@ -27,4 +27,5 @@ List of the mods:
 + FNV BSA Decompressor
 + JIP LN NVSE Plugin
 + JohnnyGuitar NVSE
++ Collision Meshes
 
