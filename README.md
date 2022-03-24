@@ -1,5 +1,5 @@
 # Fallout New Vegas Patcher
-Downloads and applies patches and mods for better game experience
+*Downloads and applies patches and mods for better game experience*
 
 **Note: game will be also russified and installed mods is in Russian language too**
 
