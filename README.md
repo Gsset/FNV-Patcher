@@ -1,12 +1,15 @@
 # Fallout New Vegas Patcher
-*Downloads and applies patches and mods for better game experience*
+### Downloads and applies patches and mods for better game experience
 
 **Note: game will be also russified and installed mods is in Russian language too**
 
 ## How to use:
-1. Run FalloutNVLauncher.exe, set your resolution, choose Ultra or Hight preset, turn V-Sync off and Windowed Mode on, toggle HDR Screen Effect on. Run Fallout New Vegas. When it will load - exit.
-2. Download and run the [FNV_Patcher.bat](https://github.com/Gsset/FNV-Patcher/releases/download/script_v2/FNV_Patcher.bat), follow the instructions in the console window
-3. Enjoy, you can launch FNV with FalloutNV.exe (means you can run FNV directly from Steam/GOG/Bethesda Launcher and so on) or with nvse_loader.exe
+1. Download and install [DirectX End-User Runtimes](https://www.microsoft.com/ru-RU/download/details.aspx?id=8109)
+2. Download and install Microsoft Visual C++ Redistributable Package: [for 64-bit systems](https://www.upload.ee/files/13978184/VCR_Hyb_x86_x64_19.03.2022.rar.html); [for 32-bit systems](https://www.upload.ee/files/13978183/VCR_Hyb_x86_19.03.2022.rar.html)
+3. Open cmd as admin and type *dism /online /Enable-Feature /FeatureName:DirectPlay /All* then press enter
+4. Run FalloutNVLauncher.exe, set your resolution, choose Ultra or Hight preset, turn V-Sync off and Windowed Mode on, toggle HDR Screen Effect on. Run Fallout New Vegas. When it will load - exit.
+5. Download and run the [FNV_Patcher.bat](https://github.com/Gsset/FNV-Patcher/releases/download/script_v2/FNV_Patcher.bat), follow the instructions in the console window
+6. Enjoy, you can launch FNV with FalloutNV.exe (means you can run FNV directly from Steam/GOG/Bethesda Launcher and so on) or with nvse_loader.exe
 
 ## Used mods and tools
 <details>
