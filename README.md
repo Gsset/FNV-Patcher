@@ -3,10 +3,12 @@ Downloads and applies basic patches and mods, just run the [FNV_Patcher.bat](htt
 
 **Note: game will be also russified and installed mods is in Russian language too**
 
+1. First item with a hidden code block
 <details>
-  <summary>List of the mods:</summary>
+  <summary>Example</summary>
+
   ```
-B42 Compatibility Skeleton
+  B42 Compatibility Skeleton
 B42 Inertia
 Casino Exchage All
 Collision Meshes
