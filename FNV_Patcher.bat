@@ -40,7 +40,7 @@ echo.
 powershell -Command "& {Invoke-WebRequest !curl_link! -outfile Tools\curl.zip}" || %error_download% curl && pause>nul && goto Tools
 powershell -Command "& {Invoke-WebRequest !7z_link! -outfile Tools\7z.exe}"     || %error_download% 7zip && pause>nul && goto :Tools
 %zip% e "Tools\curl.zip" -o"Tools\">nul || %error_unpack% curl && pause>nul && goto :Tools
-%curl% -L -o %~dp0Mods\Mods.7z https://github.com/Gsset/FNV-Patcher/releases/download/mods_v2/Mods.7z || %error_download% модов && pause>nul && goto Tools
+%curl% -L -o %~dp0Mods\Mods.7z https://github.com/Gsset/FNV-Patcher/releases/download/mods_v3/Mods.7z || %error_download% модов && pause>nul && goto Tools
 %zip% x "%~dp0Mods\Mods.7z" -o"Mods\"
 del /f /q Mods\Mods.7z
 del /f /q Tools\curl.zip
