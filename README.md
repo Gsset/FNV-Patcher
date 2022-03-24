@@ -1,5 +1,5 @@
 # Fallout New Vegas Patcher
-Downloads and applies basic patches and mods, just run the [FNV_Patcher.bat](https://github.com/Gsset/FNV-Patcher/releases/download/script_v2/FNV_Patcher.bat)
+Downloads and applies patches and mods for better game experience, just run the [FNV_Patcher.bat](https://github.com/Gsset/FNV-Patcher/releases/download/script_v2/FNV_Patcher.bat)
 
 **Note: game will be also russified and installed mods is in Russian language too**
 
@@ -64,4 +64,4 @@ YUP
   ```
 </details>
 
-Some mods was translated to Russian by me and for some I've edited configs.
+Some mods was translated to Russian by me, for some I've edited configs and I've also included my little fixes for some mods. All mods were checked for conflicts, balance and duplicate-functionality.
