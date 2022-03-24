@@ -1,5 +1,10 @@
 # Fallout New Vegas Patcher
-Downloads and applies patches and mods for better game experience, just run the [FNV_Patcher.bat](https://github.com/Gsset/FNV-Patcher/releases/download/script_v2/FNV_Patcher.bat)
+Downloads and applies patches and mods for better game experience
+
+## How to use:
+1. Run FalloutNVLauncher.exe, set your resolution, choose Ultra or Hight preset, turn V-Sync off and Windowed Mode on, toggle HDR Screen Effect on. Run Fallout New Vegas. When it will load - exit.
+2. Download and run the [FNV_Patcher.bat](https://github.com/Gsset/FNV-Patcher/releases/download/script_v2/FNV_Patcher.bat), follow the instructions in the console window
+3. Enjoy, you can launch FNV with FalloutNV.exe (means you can run FNV directly from Steam/GOG/Bethesda Launcher and so on) or with nvse_loader.exe
 
 **Note: game will be also russified and installed mods is in Russian language too**
 
@@ -65,4 +70,4 @@ YUP
   ```
 </details>
 
-Some mods were translated to Russian by me, for some I've edited configs and I've also included my little fixes for some mods. All mods were checked for conflicts, balance and duplicate-functionality.
+Some mods were translated to Russian by me, for some I've edited configs and I've also included my little fixes for some mods. All mods were checked for conflicts, balance, relevance and duplicate-functionality.
