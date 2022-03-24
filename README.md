@@ -38,6 +38,7 @@ Just Loot Menu
 KCNVSE
 kNVSE
 Lucky 38 Lights Redone
+MCTF
 NV Compatibility Skeleton
 NVAC
 NVMIM
