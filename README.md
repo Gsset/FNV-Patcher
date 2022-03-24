@@ -3,8 +3,11 @@ Downloads and applies basic patches and mods, just run the [FNV_Patcher.bat](htt
 
 **Note: game will be also russified and installed mods is in Russian language too**
 
-List of the mods:
-+ B42 Compatibility Skeleton
+<details>
+  <summary>List of the mods:</summary>
+
+  ```
+  + B42 Compatibility Skeleton
 + B42 Inertia
 + Casino Exchage All
 + Collision Meshes
@@ -58,3 +61,5 @@ List of the mods:
 + Vanilla UI Plus
 + Weapon Mesh Improvement Mod
 + YUP
+  ```
+</details>
