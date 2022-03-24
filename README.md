@@ -10,7 +10,7 @@ Downloads and applies patches and mods for better game experience
 
 
 <details>
-  <summary>List of the mods:</summary>
+  <summary>## List of the mods:</summary>
 
   ```
   B42 Compatibility Skeleton
