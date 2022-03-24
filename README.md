@@ -63,3 +63,5 @@ Weapon Mesh Improvement Mod
 YUP
   ```
 </details>
+
+Some mods was translated to Russian by me and for some I've edited configs.
