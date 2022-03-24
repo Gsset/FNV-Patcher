@@ -8,9 +8,9 @@ Downloads and applies patches and mods for better game experience
 2. Download and run the [FNV_Patcher.bat](https://github.com/Gsset/FNV-Patcher/releases/download/script_v2/FNV_Patcher.bat), follow the instructions in the console window
 3. Enjoy, you can launch FNV with FalloutNV.exe (means you can run FNV directly from Steam/GOG/Bethesda Launcher and so on) or with nvse_loader.exe
 
-
+## Used mods and tools
 <details>
-  <summary>## List of the mods:</summary>
+  <summary>Full list:</summary>
 
   ```
   B42 Compatibility Skeleton
