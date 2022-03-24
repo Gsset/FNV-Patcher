@@ -11,9 +11,9 @@ Downloads and applies patches and mods for better game experience
  dism /online /Enable-Feature /FeatureName:DirectPlay /All
 ```
 4. Reboot your PC
-5. Run FalloutNVLauncher.exe, set your resolution, choose Ultra or Hight preset, turn V-Sync off and Windowed Mode on, toggle HDR Screen Effect on. Run Fallout New Vegas. When it will load - exit.
+5. Run *FalloutNVLauncher.exe*, set your resolution, choose *Ultra* or *Hight* preset, turn *V-Sync* off and *Windowed Mode* on, toggle *HDR Screen Effect* on. Run Fallout New Vegas. When it will load - exit.
 6. Download and run the [FNV_Patcher.bat](https://github.com/Gsset/FNV-Patcher/releases/download/script_v2/FNV_Patcher.bat), follow the instructions in the console window
-7. Enjoy, you can launch FNV with FalloutNV.exe (means you can run FNV directly from Steam/GOG/Bethesda Launcher and so on) or with nvse_loader.exe
+7. Enjoy, you can launch FNV with *FalloutNV.exe* (means you can run FNV directly from Steam/GOG/Bethesda Launcher and so on) or with *nvse_loader.exe*
 
 ## Used mods and tools
 <details>
