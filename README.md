@@ -64,4 +64,4 @@ YUP
   ```
 </details>
 
-Some mods was translated to Russian by me, for some I've edited configs and I've also included my little fixes for some mods. All mods were checked for conflicts, balance and duplicate-functionality.
+Some mods were translated to Russian by me, for some I've edited configs and I've also included my little fixes for some mods. All mods were checked for conflicts, balance and duplicate-functionality.
