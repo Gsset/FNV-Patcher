@@ -1,4 +1,5 @@
 # Fallout New Vegas Patcher
+![fnv patcher](https://user-images.githubusercontent.com/74534100/160019204-a1efedfa-c806-4a14-9e33-7541931daa81.jpg)
 Downloads and applies patches and mods for better game experience
 
 **Note: game will be also russified and installed mods is in Russian language too**
