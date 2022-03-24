@@ -4,28 +4,57 @@ Downloads and applies basic patches and mods, just run the [FNV_Patcher.bat](htt
 **Note: game will be also russified and installed mods is in Russian language too**
 
 List of the mods:
-+ Simple Open Strip
-+ Simple Open Freeside
-+ NVHR
-+ Faster Start Menu
-+ Diagonal movement
-+ Casino Exchage All
-+ Weapon Mesh Improvement
-+ YUP
-+ Remove Pre-order Messages
-+ NVTF
-+ OneTweak
-+ Enchanced Camera
-+ Enchanced Camera Ground Sink Fix
-+ Delay DLC
-+ NVAC
-+ Collision Meshes
-+ Unnoficial Patch NVSE Plus
-+ NVSE
-+ FNVModLimitFix
-+ MCTF
-+ FNV BSA Decompressor
-+ JIP LN NVSE Plugin
-+ JohnnyGuitar NVSE
-+ Collision Meshes
-
++B42 Compatibility Skeleton
++B42 Inertia
++Casino Exchage All
++Collision Meshes
++Consistent Pip-boy Icons
++Console Paste
++Daily Vendor Restock
++Desert Natural Weathers
++Diagonal Movement
++Enhanced Blood Textures
++Enhanced Camera
++FNV BSA Decompressor
++FNVModLimitFix
++Glove Remover
++High-Quality Classic Music
++Hit - .45 Auto SMG Anim Set
++Hit - 9mm SMG Anim Set
++Hit - Automatic Rifle Anim Set
++Hit's Anims - Season 1
++Hit's Anims - Season 2
++Improved Lighting Shaders
++Improved LOD noise Texture
++ISControl
++JIP LN NVSE Plugin
++JohnnyGuitar NVSE
++JSawyer Ultimate Edition
++Just Hit Marker
++Just Loot Menu
++KCNVSE
++kNVSE
++Lucky 38 Lights Redone
++NV Compatibility Skeleton
++NVAC
++NVMIM
++NVSE
++NVTF
++NVHR
++Ogg Vorbis Libraries
++OneTweak
++Precision Collision
++Sierra Madre Grand Entrance
++Simple DLC Delay
++Simple Open Freeside
++Simple Open Strip
++Stewie Tweaks
++The Mod Configuration Menu
++Titans of The New West
++Titans of the New West Icons
++UIO
++Unofficial Patch NVSE Plus
++Vanilla Loading Screens HD
++Vanilla UI Plus
++Weapon Mesh Improvement Mod
++YUP
