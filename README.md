@@ -2,7 +2,7 @@
 ![fnv patcher](https://user-images.githubusercontent.com/74534100/160023621-79f9cf1f-b2e2-4c39-9ecf-aebe9ff7bee9.png)
 Downloads and applies patches and mods for better game experience
 
-Original Windows 10/11 are only supported
+Only original Windows 10/11 are supported
 
 **Note: game will be also russified and installed mods is in Russian language too**
 
