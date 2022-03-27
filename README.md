@@ -63,7 +63,7 @@ NVTF
 NVHR
 Ogg Vorbis Libraries
 OneTweak
-Precision Collision
+Precision Collision Clutter NV
 Sierra Madre Grand Entrance
 Simple DLC Delay
 Simple Open Freeside
