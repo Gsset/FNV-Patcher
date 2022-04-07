@@ -16,10 +16,10 @@ exit
 
 :Variables
 for /f "delims=" %%a in ('powershell -Command "& {Get-ItemProperty -Path '"HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders"' -Name Personal | Select-Object -ExpandProperty Personal}"') do set docs=%%a
-if %bitness%==64 (set 7z_link=https://raw.githubusercontent.com/Gsset/Fastboot-Flasher-For-Begonia/main/tools/7za_64.exe
-set curl_link=https://raw.githubusercontent.com/Gsset/Fastboot-Flasher-For-Begonia/main/tools/curl_64.zip)
-if %bitness%==32 (set 7z_link=https://raw.githubusercontent.com/Gsset/Fastboot-Flasher-For-Begonia/main/tools/7za_32.exe
-set curl_link=https://raw.githubusercontent.com/Gsset/Fastboot-Flasher-For-Begonia/main/tools/curl_32.zip)
+if %bitness%==64 (set 7z_link=https://raw.githubusercontent.com/Gsset/Flasher-For-Begonia/main/tools/7za_64.exe
+set curl_link=https://raw.githubusercontent.com/Gsset/Flasher-For-Begonia/main/tools/curl_64.zip)
+if %bitness%==32 (set 7z_link=https://raw.githubusercontent.com/Gsset/Flasher-For-Begonia/main/tools/7za_32.exe
+set curl_link=https://raw.githubusercontent.com/Gsset/Flasher-For-Begonia/main/tools/curl_32.zip)
 if exist Tools\ok.txt (set first_run=0) else (set first_run=1)
 set "echo=echo.&&echo."
 set zip="%~dp0Tools\7z.exe"
